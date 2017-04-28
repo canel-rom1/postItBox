@@ -1,3 +1,5 @@
 *.stl
 *.gcode
 *.swp
+*.JPG
+*.png
