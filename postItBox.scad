@@ -1,28 +1,31 @@
-/**************************************************/
-/* Fichier: postItBox.scad                        */
-/* Crée par: Rom1 - CANEL - https://www.canel.ch  */
-/* Date: 22 juillet 2017                          */
-/* Licence: GNU GENERAL PUBLIC LICENSE v3         */
-/* Programme: openscad                            */
-/* Déscription: Boîte pour ranger des post-it ou  */
-/*              ou des cartes de visites.         */
-/**************************************************/
+/****************************************************/
+/* File: postItBox.scad                             */
+/* Version: 1.1                                     */
+/* Create by: Rom1 <rom1@canel.ch>                  */ 
+/*            CANEL - https://www.canel.ch          */
+/* Date: 22 avril 2017                              */
+/* License: GNU GENERAL PUBLIC LICENSE v3           */
+/* Programme: openscad                              */
+/* Description: Boîte pour ranger des post-it ou    */
+/*              ou des cartes de visites.           */
+/****************************************************/
+
 
 /*************/
 /* Variables */
 /*************/
 
-thickness = 2;				// Épaisseur de la boîte
+thickness = 2;              // Épaisseur de la boîte
 
-paper_width = 57;			// Dimension du papier (post-it, cartes, etc)
+paper_width = 57;           // Dimension du papier (post-it, cartes, etc)
 paper_length = 87;
 
-box_height = 50;			// Hauteur de la boîte
+box_height = 50;            // Hauteur de la boîte
 
-slit = true;				// Prévoir l'ouverture
-slit_width = 20;			// Largueur de l'ouverture
+slit = true;                // Prévoir l'ouverture
+slit_width = 20;            // Largueur de l'ouverture
 
-base_width = 67;			// Dimension du socle de la boîte
+base_width = 67;            // Dimension du socle de la boîte
 base_length = 97;
 base_height = 2;
 
@@ -63,3 +66,6 @@ module container(){
 
 base();
 translate([(base_length - box_length)/2, (base_width - box_width)/2, 0]) container();
+
+
+// vim: ft=openscad tw=100 et ts=4 sw=4
