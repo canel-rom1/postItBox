@@ -1,4 +1,5 @@
 /****************************************************/
+/* Project name: postItBox                          */
 /* File: postItBox.scad                             */
 /* Version: 1.1                                     */
 /* Create by: Rom1 <rom1@canel.ch>                  */ 
